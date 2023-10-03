@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @tailwind colors */
 
 body{
   background: #F6F6F6;
@@ -9,28 +10,25 @@ body{
   content: ' | '; 
   font-weight: 600;
 }
-/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.mr-2-3{
+  margin-right: 2.3rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.customInput input[type="radio"]:checked + label {
+  background-color: transparent;
+  border-color: theme('colors.black');
+  color: theme('colors.black');
+  border-width: 1px;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+  .customInput input[type="radio"] + label {
+    background-color: theme('colors.stone');
+    border-color: theme('colors.stone');
+    color: theme('colors.black');
+    }
+
+  .error {
+    color: red;
+    font-size: 2rem;
+  }
+  
