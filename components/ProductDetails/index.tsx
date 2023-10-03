@@ -3,7 +3,7 @@ export default function ProductDetails() {
         <div className="md:flex items-start justify-center py-12 2xl:px-20 md:px-6 px-4">
 
   <div className="xl:w-2/6 lg:w-2/5 w-80 md:block hidden">
-    <img className="w-full" alt="image of a girl posing" src="https://i.ibb.co/QMdWfzX/component-image-one.png" />
+    <img className="w-full" alt="image of a girl posing" src="./product-1.png" />
   </div>
   <div className="md:hidden">
     <img className="w-full" alt="image of a girl posing" src="https://i.ibb.co/QMdWfzX/component-image-one.png" />
@@ -16,8 +16,16 @@ export default function ProductDetails() {
   </div>
   <div className="xl:w-2/5 md:w-1/2 lg:ml-8 md:ml-6 md:mt-0 mt-6">
     <div className="border-b border-gray-200 pb-6">
-      <p className="text-sm leading-none text-gray-600 dark:text-gray-300 ">Balenciaga Fall Collection</p>
-      <h1 className="lg:text-2xl text-xl font-semibold lg:leading-6 leading-7 text-gray-800 dark:text-white mt-2">Balenciaga Signature Sweatshirt</h1>
+      <p className="text-sm leading-none text-gray-600 dark:text-gray-300 ">6061 Aluminum Plate 0.25”</p>
+      <h1 className="lg:text-2xl text-xl font-semibold lg:leading-6 leading-7 text-gray-800 dark:text-white mt-2">$150.67</h1>
+    </div>
+    <div>
+      <p className="xl:pr-48 text-base lg:leading-tight leading-normal text-gray-600 dark:text-gray-300 mt-7">6061-T651 Aluminum is...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla leo ligula, faucibus eu venenatis quis, convallis non nisi.</p>
+      <p className="text-base leading-4 mt-7 text-gray-600 dark:text-gray-300">Product Code: 8BN321AF2IF0NYA</p>
+      <p className="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Length: 13.2 inches</p>
+      <p className="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Height: 10 inches</p>
+      <p className="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Depth: 5.1 inches</p>
+      <p className="md:w-96 text-base leading-normal text-gray-600 dark:text-gray-300 mt-4">Composition: 100% calf leather, inside: 100% lamb leather</p>
     </div>
     <div className="py-4 border-b border-gray-200 flex items-center justify-between">
       <p className="text-base leading-4 text-gray-800 dark:text-gray-300">Colours</p>
@@ -47,14 +55,6 @@ export default function ProductDetails() {
       </svg>
       Check availability in store
     </button>
-    <div>
-      <p className="xl:pr-48 text-base lg:leading-tight leading-normal text-gray-600 dark:text-gray-300 mt-7">It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of usingLorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
-      <p className="text-base leading-4 mt-7 text-gray-600 dark:text-gray-300">Product Code: 8BN321AF2IF0NYA</p>
-      <p className="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Length: 13.2 inches</p>
-      <p className="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Height: 10 inches</p>
-      <p className="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Depth: 5.1 inches</p>
-      <p className="md:w-96 text-base leading-normal text-gray-600 dark:text-gray-300 mt-4">Composition: 100% calf leather, inside: 100% lamb leather</p>
-    </div>
     <div>
       <div className="border-t border-b py-4 mt-7 border-gray-200">
         <div data-menu className="flex justify-between items-center cursor-pointer">
