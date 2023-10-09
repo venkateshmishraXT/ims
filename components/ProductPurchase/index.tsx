@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 import API_BASE_URL from "@/config/api"
 import React, { useEffect, useState } from "react"
@@ -57,7 +59,7 @@ export default function ProductPurchase() {
                                             </div>
                                         </div>
                                         <div className="mt-3 flex items-center">
-                                            <span className="text-sm font-semibold"></span>&nbsp;<span className="font-bold text-xl">$120<sup>00</sup></span>&nbsp;
+                                            <span className="text-sm font-semibold"></span>&nbsp;<span className="font-bold text-xl">${data.price}<sup>00</sup></span>&nbsp;
                                         </div>
                                     </div>
 
