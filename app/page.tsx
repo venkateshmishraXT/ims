@@ -1,6 +1,6 @@
-import ProductPurchase from '../components/ProductPurchase'
-import ProductDetails from '../components/ProductDetails'
-import React from 'react'
+import ProductPurchase from "../components/ProductPurchase";
+import ProductDetails from "../components/ProductDetails";
+import React from "react";
 
 export default function Home() {
   return (
@@ -8,5 +8,5 @@ export default function Home() {
       <ProductDetails />
       <ProductPurchase />
     </div>
-  )
+  );
 }

@@ -3,32 +3,31 @@
 @tailwind utilities;
 /* @tailwind colors */
 
-body{
-  background: #F6F6F6;
+body {
+  background: #f6f6f6;
 }
 .copyright::after {
-  content: ' | '; 
+  content: " | ";
   font-weight: 600;
 }
-.mr-2-3{
+.mr-2-3 {
   margin-right: 2.3rem;
 }
 
 .customInput input[type="radio"]:checked + label {
   background-color: transparent;
-  border-color: theme('colors.black');
-  color: theme('colors.black');
+  border-color: theme("colors.black");
+  color: theme("colors.black");
   border-width: 1px;
-  }
+}
 
-  .customInput input[type="radio"] + label {
-    background-color: theme('colors.stone');
-    border-color: theme('colors.stone');
-    color: theme('colors.black');
-    }
+.customInput input[type="radio"] + label {
+  background-color: theme("colors.stone");
+  border-color: theme("colors.stone");
+  color: theme("colors.black");
+}
 
-  .error {
-    color: red;
-    font-size: 2rem;
-  }
-  
+.error {
+  color: red;
+  font-size: 2rem;
+}
