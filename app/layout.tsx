@@ -19,10 +19,10 @@ export default function RootLayout({
     fetch(`${API_BASE_URL}/content`)
       .then((response) => response.json())
       .then((json) => {
-        setData(json.data);
+        setData(json.contentFields);
       });
   }, []);
-  //new CMS api call
+  // new CMS api call
   // const url = 'https://52.204.255.29/o/headless-delivery/v1.0/structured-contents/34300?fields=contentFields';
   // const authkey = 'dXNlckBsaWZlcmF5LmNvbTpOZXd1c2VyQDEwMA==';
   // useEffect(() => {
@@ -34,8 +34,8 @@ export default function RootLayout({
   //       }
   //     }).then(response => response.json())
   //       .then(json => {
-  //           setData(json.data)
-  //           console.log('cms data ====' + json.data);
+  //           setData(json.contentFields)
+  //           console.log('cms data ====' + json.contentFields);
   //       })
   //       .catch((error) => {
   //         console.log(error)
