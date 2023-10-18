@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   const [data, setData] = useState<any>();
   useEffect(() => {
-    fetch(`${CMS_API_BASE_URL}`)
+    fetch(`${API_BASE_URL}/content`)
       .then((response) => response.json())
       .then((json) => {
         setData(json.data);
