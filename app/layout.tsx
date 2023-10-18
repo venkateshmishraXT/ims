@@ -22,6 +22,25 @@ export default function RootLayout({
         setData(json.data);
       });
   }, []);
+  //new CMS api call
+  // const url = 'https://52.204.255.29/o/headless-delivery/v1.0/structured-contents/34300?fields=contentFields';
+  // const authkey = 'dXNlckBsaWZlcmF5LmNvbTpOZXd1c2VyQDEwMA==';
+  // useEffect(() => {
+  //     fetch(url, {
+  //       method: 'GET',
+  //       headers: {
+  //         authorization: 'Basic ' + authkey,
+  //         'x-csrf-token': '9fd4qhxq',
+  //       }
+  //     }).then(response => response.json())
+  //       .then(json => {
+  //           setData(json.data)
+  //           console.log('cms data ====' + json.data);
+  //       })
+  //       .catch((error) => {
+  //         console.log(error)
+  //       });
+  // }, [])
   return (
     <html lang="en">
       <body className={inter.className}>
