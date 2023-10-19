@@ -5,8 +5,8 @@ const inter = Inter({ subsets: ["latin"] });
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
 import React, { createContext, useEffect, useState } from "react";
-import API_BASE_URL from "@/config/api";
-import CMS_API_BASE_URL from "@/config/cms";
+//import API_BASE_URL from "@/config/api";
+import CMS_API_BASE from "@/config/cms";
 export const context = createContext(null);
 
 export default function RootLayout({
@@ -22,25 +22,22 @@ export default function RootLayout({
   //       setData(json.contentFields);
   //     });
   // }, []);
-  // new CMS api call
-  const url = 'https://52.204.255.29/o/headless-delivery/v1.0/structured-contents/34300?fields=contentFields';
-  const authkey = 'dXNlckBsaWZlcmF5LmNvbTpOZXd1c2VyQDEwMA==';
+  //new CMS api call
+
   useEffect(() => {
-      fetch(url, {
-        method: 'GET',
-        headers: {
-          authorization: 'Basic ' + authkey,
-          'x-csrf-token': '9fd4qhxq',
-        }
-      }).then(response => response.json())
-        .then(json => {
-            setData(json.contentFields)
-            console.log('cms data ====' + json.contentFields);
-        })
-        .catch((error) => {
-          console.log(error)
-        });
-  }, [])
+    fetch(CMS_API_BASE.URL, {
+      method: "GET",
+      headers: CMS_API_BASE.headers,
+    })
+      .then((response) => response.json())
+      .then((json) => {
+        setData(json.contentFields);
+        console.log("cms data ====" + json.contentFields);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
   return (
     <html lang="en">
       <body className={inter.className}>
