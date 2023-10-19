@@ -2,10 +2,9 @@ import { context } from "@/app/layout";
 import React, { useContext } from "react";
 
 export default function Navbar() {
-    const contextValue:any = useContext(context);
     return (
         <>
-       {contextValue && <nav className="bg-blue sticky md:relative top-0 left-0">
+       <nav className="bg-blue sticky md:relative top-0 left-0">
             <div className="mx-auto max-w-7xl px-2 hidden md:block">
                 <div className="relative flex h-10 items-center justify-between">
                     <div className="flex flex-1 items-center justify-end">
@@ -85,7 +84,7 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-        </nav>}
+        </nav>
         </>
     )
 }
