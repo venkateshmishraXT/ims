@@ -15,32 +15,32 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [data, setData] = useState<any>();
-  useEffect(() => {
-    fetch(`${API_BASE_URL}/content`)
-      .then((response) => response.json())
-      .then((json) => {
-        setData(json.contentFields);
-      });
-  }, []);
-  // new CMS api call
-  // const url = 'https://52.204.255.29/o/headless-delivery/v1.0/structured-contents/34300?fields=contentFields';
-  // const authkey = 'dXNlckBsaWZlcmF5LmNvbTpOZXd1c2VyQDEwMA==';
   // useEffect(() => {
-  //     fetch(url, {
-  //       method: 'GET',
-  //       headers: {
-  //         authorization: 'Basic ' + authkey,
-  //         'x-csrf-token': '9fd4qhxq',
-  //       }
-  //     }).then(response => response.json())
-  //       .then(json => {
-  //           setData(json.contentFields)
-  //           console.log('cms data ====' + json.contentFields);
-  //       })
-  //       .catch((error) => {
-  //         console.log(error)
-  //       });
-  // }, [])
+  //   fetch(`${API_BASE_URL}/content`)
+  //     .then((response) => response.json())
+  //     .then((json) => {
+  //       setData(json.contentFields);
+  //     });
+  // }, []);
+  // new CMS api call
+  const url = 'https://52.204.255.29/o/headless-delivery/v1.0/structured-contents/34300?fields=contentFields';
+  const authkey = 'dXNlckBsaWZlcmF5LmNvbTpOZXd1c2VyQDEwMA==';
+  useEffect(() => {
+      fetch(url, {
+        method: 'GET',
+        headers: {
+          authorization: 'Basic ' + authkey,
+          'x-csrf-token': '9fd4qhxq',
+        }
+      }).then(response => response.json())
+        .then(json => {
+            setData(json.contentFields)
+            console.log('cms data ====' + json.contentFields);
+        })
+        .catch((error) => {
+          console.log(error)
+        });
+  }, [])
   return (
     <html lang="en">
       <body className={inter.className}>
